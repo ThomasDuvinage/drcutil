@@ -109,7 +109,9 @@ get_source_octomap() {
 get_source_choreonoid() {
     get_source "git clone ${GITHUB_LINK}isri-aist/choreonoid.git" choreonoid
     cd choreonoid/ext
-    get_source "git clone ${GITHUB_LINK}isri-aist/hrpcnoid" hrpcnoid
+    if [ "$USE_HRPCNOID" -eq 1 ]; then
+	get_source "git clone ${GITHUB_LINK}isri-aist/hrpcnoid" hrpcnoid
+    fi
     get_source "git clone ${GITHUB_LINK}isri-aist/cnoid-boost-python" cnoid-boost-python
     get_source "git clone ${GITHUB_LINK}isri-aist/grxui-plugin" grxui-plugin
     get_source "git clone ${GITHUB_LINK}isri-aist/openhrp-plugin" openhrp-plugin

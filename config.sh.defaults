@@ -17,4 +17,5 @@ export COMPILER_CC=/usr/bin/gcc
 export USE_CLANG=0
 export BUILD_GOOGLE_TEST=ON
 export GITHUB_SSH=0
+export USE_HRPCNOID=1
 export PACKAGES="OpenRTM-aist openhrp3 pcl octomap hrpsys-base HRP2 HRP2KAI HRP5P sch-core state-observation hmc2 hrpsys-humanoid hrpsys-private hrpsys-state-observation choreonoid"
