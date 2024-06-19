@@ -22,7 +22,7 @@ else
 fi
 
 case $(uname -m) in
-    x86_64)
+    x86_64 | aarch64)
         ARCH_BITS=64
         ;;
     x86|i[3-6]86)
